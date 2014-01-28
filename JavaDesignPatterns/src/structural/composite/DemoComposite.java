@@ -29,7 +29,7 @@ class Composite implements Component {
 class Leaf implements Component {
 	private String name;
 
-	Leaf(String name) {
+	public Leaf(String name) {
 		this.name = name;
 	}
 

@@ -15,7 +15,7 @@ class EuropePlug {
 class AmericaAdapter extends AmericaPlug {
 	private EuropePlug europePlug;
 
-	AmericaAdapter(EuropePlug europePlug) {
+	public AmericaAdapter(EuropePlug europePlug) {
 		this.europePlug = europePlug;
 	}
 

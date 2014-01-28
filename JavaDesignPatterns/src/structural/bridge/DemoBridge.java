@@ -26,7 +26,6 @@ class PhilipsTV implements InterfaceTV {
 }
 
 class LGTV implements InterfaceTV {
-
 	@Override
 	public void on() {
 		System.out.println("LG is turned on");
@@ -64,7 +63,6 @@ abstract class AbstractRemoteControl {
 }
 
 class LogitechRemoteControl extends AbstractRemoteControl {
-
 	public LogitechRemoteControl(InterfaceTV tv) {
 		super(tv);
 	}
@@ -76,7 +74,6 @@ class LogitechRemoteControl extends AbstractRemoteControl {
 }
 
 public class DemoBridge {
-
 	public static void main(String[] args) {
 		InterfaceTV tv = new LGTV();
 		LogitechRemoteControl lrc = new LogitechRemoteControl(tv);
