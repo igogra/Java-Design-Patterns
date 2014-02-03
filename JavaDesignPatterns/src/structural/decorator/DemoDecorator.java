@@ -22,6 +22,7 @@ class MushroomDecorator extends PizzaDecorator {
 		this.pizza = pizza;
 	}
 
+	@Override
 	public String makePizza() {
 		return pizza.makePizza() + " + Mushrooms";
 	}
@@ -34,6 +35,7 @@ class OnionDecorator extends PizzaDecorator {
 		this.pizza = pizza;
 	}
 
+	@Override
 	public String makePizza() {
 		return pizza.makePizza() + " + Onion";
 	}

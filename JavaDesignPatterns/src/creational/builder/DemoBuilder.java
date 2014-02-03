@@ -13,14 +13,17 @@ class House implements HousePlan {
 	private String structure;
 	private String roof;
 
+	@Override
 	public void setBasement(String basement) {
 		this.basement = basement;
 	}
 
+	@Override
 	public void setStructure(String structure) {
 		this.structure = structure;
 	}
 
+	@Override
 	public void setRoof(String roof) {
 		this.roof = roof;
 	}
@@ -49,18 +52,22 @@ class IglooHouseBuilder implements HouseBuilder {
 		this.house = new House();
 	}
 
+	@Override
 	public void buildBasement() {
 		house.setBasement("Ice Bars");
 	}
 
+	@Override
 	public void buildStructure() {
 		house.setStructure("Ice Blocks");
 	}
 
+	@Override
 	public void buildRoof() {
 		house.setRoof("Ice Dome");
 	}
 
+	@Override
 	public House getHouse() {
 		return this.house;
 	}
@@ -73,18 +80,22 @@ class TipiHouseBuilder implements HouseBuilder {
 		this.house = new House();
 	}
 
+	@Override
 	public void buildBasement() {
 		house.setBasement("Wooden Poles");
 	}
 
+	@Override
 	public void buildStructure() {
 		house.setStructure("Wood and Ice");
 	}
 
+	@Override
 	public void buildRoof() {
 		house.setRoof("Wood, caribou and seal skins");
 	}
 
+	@Override
 	public House getHouse() {
 		return this.house;
 	}

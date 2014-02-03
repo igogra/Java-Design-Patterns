@@ -19,6 +19,7 @@ class AmericaAdapter extends AmericaPlug {
 		this.europePlug = europePlug;
 	}
 
+	@Override
 	public void supplyAmerica() {
 		europePlug.supplyEurope();
 	}

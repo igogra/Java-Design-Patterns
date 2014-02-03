@@ -23,6 +23,7 @@ class RecordCollection implements IContainer {
 	private class RecordIterator implements IIterator {
 		private int index;
 
+		@Override
 		public boolean hasNext() {
 			if (index < recordArray.length) {
 				return true;
@@ -31,6 +32,7 @@ class RecordCollection implements IContainer {
 			}
 		}
 
+		@Override
 		public Object next() {
 			if (this.hasNext()) {
 				return recordArray[index++];

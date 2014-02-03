@@ -5,6 +5,7 @@ interface Internet {
 }
 
 class ProxyAccess implements Internet {
+	@Override
 	public void connect() {
 		System.out.println("Connecting to Internet from proxy...");
 	}
@@ -22,6 +23,7 @@ class InternetAccess implements Internet {
 		this.internet = internet;
 	}
 
+	@Override
 	public void connect() {
 		internet.connect();
 	}
